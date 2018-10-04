@@ -12,3 +12,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/********** Categories ***************/
+
+.containercat {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+
+}
+.imgcat {
+  border: 3px solid yellow;
+  border-radius: 15px;
+  grid-column: 1;
+}
+
+.titlecat{
+  color: white;
+}

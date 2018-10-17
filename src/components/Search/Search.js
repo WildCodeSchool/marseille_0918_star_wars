@@ -25,7 +25,8 @@ export default class Search extends Component {
   render() {
     console.log(this.state)
     return (
-      <div className="search_bar">
+      //hide because break responsive design
+      <div className="search_bar" hidden>
         <Autocomplete
           inputProps={{placeholder: 'search me'}}
           getItemValue={(item) => item.label}

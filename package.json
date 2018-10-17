@@ -13,7 +13,7 @@
     "reactstrap": "^6.4.0"
   },
   "scripts": {
-    "start": "BROWSER='Firefox Developer Edition' react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

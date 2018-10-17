@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
-import logo from './../logo.svg';
+import logo from '../pictures/logo.svg';
 import './../App.css';
 import './Template.scss';
 import './header.scss';
+import facebookLogo from '../pictures/facebook-logo.png'
+import instragramLogo from '../pictures/instagram-logo.png';
+import twitterLogo from '../pictures/twitter-logo.png';
+import planet from '../pictures/planet.png';
+
 
 import Categorie from './Categorie/Categorie';
 import Footer from './Footer/Footer';
 import Nav from './Nav/Nav';
+import Header from './Header/Header';
 
 
 class Template extends Component {
   render() {
     return (
       <div className="App">
-        <header className="header">
-            <img src={logo} className="App-logo" alt="logo" />
-        </header>
-    
+        <Header logo={logo}/>
         
         <Nav/>
         
@@ -39,11 +42,11 @@ class Template extends Component {
     
         <footer>
             <Footer
-            contact = ""
-            copyright = "Star Wars and all associated names and/or images are copyright Lucasfilm Ltd. Images were freely collected from Wookiepedia"
-            facebook = ""
-            instagram = ""
-            twitter = ""
+            contact = {planet}
+            copyright = "copyright"
+            facebook = {facebookLogo}
+            instagram = {instragramLogo}
+            twitter = {twitterLogo}
             />
         </footer>
     </div>

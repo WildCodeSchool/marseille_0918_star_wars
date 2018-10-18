@@ -1,0 +1,272 @@
+// .p-autocomplete{
+//     display: flex;
+//     justify-content: right;
+//     align-items: center;
+// }
+
+// ************* Container input ****************
+.content-section{
+    // display: flex;
+    // justify-content: end;
+     
+}
+.searchBar{
+    display: flex;
+    max-height: 150px;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+// *************  input ****************
+.p-autocomplete-input{
+    border-radius: 10px;
+    border: 3px solid yellow;
+    padding-left: 20px;
+    width: 10px;
+    height: 20px;
+    opacity: 0%;
+    margin-right: 28px;
+    margin-top: 18px;
+
+}
+
+// ---------Animation Input--------
+.input-open {
+    // padding-right: 150px;
+    width: 200px;
+    transition: 1s;
+    opacity: 100%;
+    
+}
+
+.input-close {
+    transition: 1s;
+    opacity: 100%;
+}
+
+// *********** Dropdown ***********
+
+.p-autocomplete-items {
+    background-color: yellow;
+    width: 100px;
+    margin: 0px;
+    animation : slideDown 0.4s;
+    list-style: none;
+    position: absolute;
+    
+}
+
+// ---------Animation Dropdown--------
+@keyframes slideDown {
+    from {
+        transform: translateY(10%);
+        opacity: 0%;
+        position: absolute;
+    }
+  
+    to {
+        transform: translateY(0%);
+        opacity: 100%;
+        position: absolute;
+        
+
+       
+    }
+  }
+
+
+//   ****************** Button *******************
+
+.button_Search{
+    position: absolute;
+    margin-right:25px;
+    
+   
+}
+
+// -----AnimationBB8-------
+#bb8{
+    position: absolute;
+    margin-right:2px;
+}
+.button-open{
+    padding-right: 30px;
+    transition: 1s;
+    
+
+}
+.button-close{
+    transition: 1s;
+}
+
+// -----Animation body BB8-------
+
+.body-open{
+    // margin-left: calc(100% - 40px);
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.body-close{
+    transition: 1s;
+}
+
+// -----Animation head BB8-------
+
+.head-open{
+    margin-left:calc(100% - 40px) ;
+    transition: 1s;
+}
+
+.head-close{
+    transition: 1s;
+}
+
+
+
+// -----Construction BB8-------
+#bb8_body {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: rgba(240, 240, 240, 1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(240, 240, 240, 1) 0%, rgba(235, 235, 235, 1) 72%, rgba(191, 191, 191, 1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(240, 240, 240, 1)), color-stop(72%, rgba(235, 235, 235, 1)), color-stop(100%, rgba(191, 191, 191, 1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(240, 240, 240, 1) 0%, rgba(235, 235, 235, 1) 72%, rgba(191, 191, 191, 1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(240, 240, 240, 1) 0%, rgba(235, 235, 235, 1) 72%, rgba(191, 191, 191, 1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(240, 240, 240, 1) 0%, rgba(235, 235, 235, 1) 72%, rgba(191, 191, 191, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(240, 240, 240, 1) 0%, rgba(235, 235, 235, 1) 72%, rgba(191, 191, 191, 1) 100%);
+    
+}
+
+#c1,
+#c2,
+#c3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 3px solid #fac562;
+    position: relative;
+}
+
+.s1 {
+    background: #fac562;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fac562 0%, #fac562 24%, #f0f0f0 27%, #f0f0f0 76%, #fac562 79%, #fac562 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fac562 0%, #fac562 24%, #f0f0f0 27%, #f0f0f0 76%, #fac562 79%, #fac562 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fac562 0%, #fac562 24%, #f0f0f0 27%, #f0f0f0 76%, #fac562 79%, #fac562 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    /* IE6-9 */
+    width: 2px;
+    height: 10px;
+    position: relative;
+    left: 4px;
+}
+
+.s2 {
+    background: #fac562;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #fac562 0%, #fac562 24%, #f0f0f0 27%, #f0f0f0 76%, #fac562 79%, #fac562 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #fac562 0%, #fac562 24%, #f0f0f0 27%, #f0f0f0 76%, #fac562 79%, #fac562 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #fac562 0%, #fac562 24%, #f0f0f0 27%, #f0f0f0 76%, #fac562 79%, #fac562 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   
+    /* IE6-9 */
+    width: 10px;
+    height: 2px;
+    position: relative;
+    top: -6px;
+}
+
+#c1 {
+    left: 16px;
+    top: 5px;
+}
+
+#c2 {
+    left: 4px;
+    top: 8px;
+}
+
+#c3 {
+    left: 26px;
+    top: -8px;
+}
+
+#half_circle {
+    height: 15px;
+    width: 30px;
+    border-radius: 30px 30px 0 0;
+    background: #f0f0f0;
+}
+
+#lens1 {
+    background-color: #262626;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    position: relative;
+    left: 11px;
+    top: 3px;
+}
+
+#lens2 {
+    background-color: #262626;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    position: relative;
+    left: 20px;
+    top: 1px;
+}
+
+#or0 {
+    background-color: #fac562;
+    height: 1px;
+    width: 17px;
+    border-radius: 1px;
+    position: relative;
+    top: 2px;
+    left: 6px;
+}
+
+#or1 {
+    background-color: #fac562;
+    height: 2px;
+    width: 30px;
+    border-radius: 1px;
+    position: relative;
+    top: 1px;
+}
+
+#dg1 {
+    background-color: #666666;
+    height: 4px;
+    width: 30px;
+}
+
+#lg1 {
+    border-top: 3px solid #9f9f9f;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    height: 0;
+    width: 20px;
+}
+
+#lg2 {
+    background-color: #e0e0e0;
+    height: 1px;
+    width: 50px;
+    position: relative;
+    top: 23px;
+}
+
+#bb8_head {
+    margin-left: 10px;
+    margin-top: -18px;
+}

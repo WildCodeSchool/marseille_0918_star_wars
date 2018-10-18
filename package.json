@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "node-sass": "^4.9.3",
+    "normalize.css": "^8.0.0",
     "primereact": "^2.0.0-beta.9",
     "react": "^16.5.2",
     "react-autocomplete": "^1.8.1",
@@ -13,7 +14,7 @@
     "reactstrap": "^6.4.0"
   },
   "scripts": {
-    "start": "BROWSER='Firefox Developer Edition' react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

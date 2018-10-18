@@ -1,45 +1,100 @@
-import React, { Component } from 'react';
-import Autocomplete from 'react-autocomplete';
-import "./Search.css";
+
+import React, {Component} from 'react';
+import {AutoComplete} from 'primereact/autocomplete';
+// import {returnId} from '';
+import "./Search.scss";
+import Bouton_R2D2 from './Bouton_R2D2.png';
+
+
 
 export default class Search extends Component {
-  state = {
-    searchDatas: [
-      { label: 'apple', name: "hfduhfud" },
-      { label: 'banana' },
-      { label: 'pear' }
-    ],
-    inputSearchValue: '',
-    suggestDatas: []
-  }
 
-  filterResult(e){
-    this.setState({inputSearchValue: e.target.value})
+  constructor() {
+    super();
+    this.state = { 
+        searchValue: '',
+        searchResult: [],
+        filteredCharacters: [],
+        isOpen: false,
+    };
 
-    let filteredResult = this.state.searchDatas.filter((val) => {
-      return val.label.startsWith(e.target.value)
-    })
-    this.setState({suggestDatas: filteredResult})
-  }
-
-  render() {
-    console.log(this.state)
-    return (
-      <div className="search_bar">
-        <Autocomplete
-          inputProps={{placeholder: 'search me'}}
-          getItemValue={(item) => item.label}
-          items={this.state.suggestDatas}
-          renderItem={(item, isHighlighted) =>
-            <div key={item.label} style={{ background: isHighlighted ? 'lightgray' : 'white' }}>
-              {item.label}
-            </div>
-          }
-          value={this.state.inputSearchValue}
-          onChange={(e) => this.filterResult(e)}
-          onSelect={(val) => console.log(val)}
-        />
-      </div>
-    )
-  }
+    this.isOpen = this.isOpen.bind(this);
+    
 }
+
+async getCharacter() {
+    let response = await fetch(`https://swapi.co/api/people/?search=${this.state.searchValue}`)
+    response = await response.json()
+    await this.setState({searchResult: response.results})
+}
+
+
+isOpen(){
+    this.setState({isOpen: !this.state.isOpen });
+}
+
+
+filterCharacter() {
+    let results = this.state.searchResult.filter((character) => {
+        return character.name.toLowerCase().startsWith(this.state.searchValue.toLowerCase())
+    });
+    this.setState({ filteredCharacters: results });
+}
+
+async runRequest(searchValue){
+    await this.setState({searchValue})
+    await this.getCharacter()
+}
+
+render() {
+  console.log("IN RENDER STATE", this.state)
+  let inputClassName = this.state.isOpen ? 'input-open' : 'input-close'
+  let animButton = this.state.isOpen ? 'button-open' : 'button-close'
+  let animButtonBody = this.state.isOpen ? 'body-open' : 'body-close'
+  let animButtonHead = this.state.isOpen ? 'head-open' : 'head-close'
+    return (
+        <div>
+            <div className="content-section implementation">
+            <div className="button_Search" onClick={this.isOpen} className={animButton}>
+    
+            <div for="bb8_cb" >
+                <div id="bb8">
+                    <div id="bb8_head" className={animButtonHead}>
+                        <div id="half_circle">
+                            <div id="or0"></div>
+                            <div id="lens1"></div>
+                            <div id="lens2"></div>
+                            <div id="or1"></div>
+                        </div>
+                        <div id="dg1"></div>
+                    <div id="lg1"></div>
+                    </div>
+                    <div id="bb8_body" className={animButtonBody}>
+                        <div id="lg2"></div>
+                        <div id="c1">
+                            <div class="s1"></div>
+                            <div class="s2"></div>
+                        </div>
+                        <div id="c2">
+                            <div class="s1"></div>
+                            <div class="s2"></div>
+                        </div>
+                        <div id="c3">
+                            <div class="s1"></div>
+                            <div class="s2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+                <AutoComplete inputClassName={inputClassName} value={this.state.searchValue} suggestions={this.state.filteredCharacters}
+                completeMethod={() => this.filterCharacter()} field="name" id="id"
+                    size={30} placeholder="Countries" minLength={1} onChange={(e) => this.runRequest(e.target.value)} />
+            </div>
+            
+        </div>
+    )
+}
+}
+

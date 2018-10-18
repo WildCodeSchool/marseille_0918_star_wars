@@ -20,8 +20,6 @@ class Template extends Component {
         
         <Nav/>
         
-        
-        
         <div className="cards">
         <Categorie
         title="Characters"

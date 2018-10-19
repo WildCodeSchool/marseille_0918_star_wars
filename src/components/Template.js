@@ -7,6 +7,7 @@ import './header.scss';
 import Categorie from './Categorie/Categorie';
 import Footer from './Footer/Footer';
 import Nav from './Nav/Nav';
+import FooterModal from './FooterModal/FooterModal';
 
 
 class Template extends Component {
@@ -35,15 +36,10 @@ class Template extends Component {
         />
         </div>
     
-        {/* <footer>
-            <Footer
-            contact = ""
-            copyright = "Star Wars and all associated names and/or images are copyright Lucasfilm Ltd. Images were freely collected from Wookiepedia"
-            facebook = ""
-            instagram = ""
-            twitter = ""
-            />
-        </footer> */}
+        <footer>
+            <Footer />
+        </footer>
+
     </div>
 );
 }

@@ -1,0 +1,16 @@
+
+.footer {
+    display: grid;
+    grid-template-columns : repeat(2, 1fr);
+}
+
+.Socials {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Instagram, .Facebook, .Twitter {
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+}

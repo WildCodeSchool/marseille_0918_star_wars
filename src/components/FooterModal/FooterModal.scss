@@ -1,0 +1,88 @@
+#Text {
+    height: 25vh;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    border: 1px solid #39BEEB;
+    width: 92%;
+    color: #39BEEB;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    
+}
+
+#Name {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #39BEEB;
+    width: 92%;
+    color: #39BEEB;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 5vh;
+    font-size: 18px;
+
+}
+
+#Email {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #39BEEB;
+    width: 92%;
+    color: #39BEEB;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 5vh;
+    font-size: 18px;
+
+}
+
+Button {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #39BEEB;
+    color: #39BEEB;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 5vh;
+    font-size: 18px;
+
+
+}
+
+ ::placeholder {
+     opacity: 0.7;
+ }
+
+.form-control {
+    width: 90%;
+}
+form {
+    text-align: center;
+}
+
+.ReactModal__Content {
+    background-image: url('./DS.jpg') !important;
+    background-size: cover !important;
+    background-position-y: 70% !important;
+}
+
+.IconClose {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.IconContact {
+    height: 50px;
+    width: 50px;
+    margin-left: 1em;
+}
+
+@media all and (max-device-width: 480px)
+
+{
+
+    .ReactModal__Content {
+        width: 80% !important;
+        background-position-y: 100% !important;
+
+    }
+
+}

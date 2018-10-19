@@ -26,32 +26,35 @@ input{
     height: 25px;
     opacity: 0%;
     outline:none;
+    
 }
 
 // ---------Animation Input--------
 .input-open {
-    // padding-right: 150px;
-    width: 200px;
+    
+    width: 250px;
     transition: 1.5s;
     opacity: 100%;
     padding-left: 45px;
     margin-top: 16px;
     margin-left: 5px; 
-    font-size: 10px;
+    font-size: 14px;
+    
 }
 
 .input-close {
-    transition: 1s;
+    transition: 1.5s;
     opacity: 0%;
     margin-top: 15px;
     margin-left: 5px;
+    padding-left: 35px;
 }
 
 // *********** Dropdown ***********
 
 .suggestion {
-    background-color:white;
-    width: 130px;
+    background-color: rgba(235,235,235,0.6);
+    width: 180px;
     animation : slideDown 0.7s;
     list-style: none;
     position: absolute;
@@ -133,11 +136,11 @@ input{
 
 .head-open{
     margin-left:calc(100% - 40px) ;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .head-close{
-    transition: 1s;
+    transition: 1.5s;
 }
 
 

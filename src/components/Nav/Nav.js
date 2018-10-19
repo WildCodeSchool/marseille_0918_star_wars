@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './Nav.scss';
-import Bouton_R2D2 from './Bouton_R2D2.png';
+
 import Search from './../Search/Search';
 
 

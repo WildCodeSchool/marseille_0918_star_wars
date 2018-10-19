@@ -21,8 +21,6 @@ class Template extends Component {
         
         <Nav/>
         
-        
-        
         <div className="cards">
         <Categorie
         title="Characters"
@@ -41,6 +39,7 @@ class Template extends Component {
         <footer>
             <Footer />
         </footer>
+
     </div>
 );
 }

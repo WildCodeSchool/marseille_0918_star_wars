@@ -20,8 +20,6 @@ class Template extends Component {
         
         <Nav/>
         
-        
-        
         <div className="cards">
         <Categorie
         title="Characters"
@@ -37,7 +35,7 @@ class Template extends Component {
         />
         </div>
     
-        <footer>
+        {/* <footer>
             <Footer
             contact = ""
             copyright = "Star Wars and all associated names and/or images are copyright Lucasfilm Ltd. Images were freely collected from Wookiepedia"
@@ -45,7 +43,7 @@ class Template extends Component {
             instagram = ""
             twitter = ""
             />
-        </footer>
+        </footer> */}
     </div>
 );
 }

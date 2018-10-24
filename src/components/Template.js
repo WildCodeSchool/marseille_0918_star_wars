@@ -4,7 +4,7 @@ import './../App.css';
 import './Template.scss';
 import './header.scss';
 
-import Categorie from './Categorie/Categorie';
+import Categories from './Categorie/Categories';
 import Footer from './Footer/Footer';
 import Nav from './Nav/Nav';
 import FooterModal from './FooterModal/FooterModal';
@@ -21,20 +21,7 @@ class Template extends Component {
         
         <Nav/>
         
-        <div className="cards">
-        <Categorie
-        title="Characters"
-        />
-        <Categorie
-        title="Characters"
-        />
-        <Categorie
-        title="Characters"
-        />
-        <Categorie
-        title="Characters"
-        />
-        </div>
+       <Categories/>
     
         <footer>
             <Footer />

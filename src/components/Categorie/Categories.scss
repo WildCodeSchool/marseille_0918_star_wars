@@ -1,0 +1,37 @@
+.titlecat{
+    color: white;
+    background-position: center, center;
+    height: 400px;
+    border-radius: 5px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0px ;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+
+// .titlecat:hover{
+//     background-image: url("./Pictures/StarWars-09.png"),url("./Pictures/Star.gif");
+// }
+
+// ********* Mobile *******
+// .cards {
+// display: grid;
+// grid-template-columns: 1fr;
+// grid-gap : 20px; 
+// }
+
+
+@media screen and (min-width : 425px){
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap : 60px; 
+    margin: 0px 160px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+}

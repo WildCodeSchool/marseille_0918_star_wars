@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './Nav.scss';
+import{NavLink} from 'react-router-dom';
 
 import Search from './../Search/Search';
 
@@ -37,17 +38,27 @@ export class Nav extends React.Component {
             <nav className={navClass}>
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  {/* <a href="#">Home</a> */}
+                  <NavLink exact to="/"> Home </NavLink>
                 </li>
+              </ul>
+              <ul>
                 <li className="green">
-                  <a href="#">Characters</a>
+                  {/* <a href="#">Characters</a> */}
+                  <NavLink to="/characters"> Characters </NavLink>
                 </li>
+              </ul>
+              <ul>
                 <li className="red">
                   <a href="#">Vehicles</a>
                 </li>
+              </ul>
+              <ul>
                 <li className="yellow">
                   <a href="#">Planets</a>
                 </li>
+              </ul>
+              <ul>
                 <li className="purple">
                   <a href="#">Species</a>
                 </li>

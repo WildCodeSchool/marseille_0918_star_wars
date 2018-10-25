@@ -7,12 +7,13 @@ import facebookLogo from '../pictures/facebook-logo.png'
 import instragramLogo from '../pictures/instagram-logo.png';
 import twitterLogo from '../pictures/twitter-logo.png';
 import planet from '../pictures/planet.png';
-
+import avatar from '../pictures/darth-vader.png';
 
 import Categorie from './Categorie/Categorie';
 import Footer from './Footer/Footer';
 import Nav from './Nav/Nav';
 import Header from './Header/Header';
+import Character from './Character/Character';
 
 
 class Template extends Component {
@@ -22,11 +23,10 @@ class Template extends Component {
         <Header logo={logo}/>
         
         <Nav/>
-        
-        
-        
         <div className="cards">
-        <Categorie
+        {/* Commented for dev purposes */}
+
+        {/* <Categorie! 
         title="Characters"
         />
         <Categorie
@@ -37,9 +37,14 @@ class Template extends Component {
         />
         <Categorie
         title="Characters"
-        />
+        />*/}
         </div>
-    
+        <character>
+          <Character
+            avatar = {avatar}
+            description = "J'ADORE LES ENORMES PATATES"
+            />
+        </character>
         <footer>
             <Footer
             contact = {planet}

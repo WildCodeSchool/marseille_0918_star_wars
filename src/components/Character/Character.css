@@ -1,0 +1,33 @@
+.container-grid-character{
+    display: grid;
+    border: 1px solid black;
+    width: 65%;
+    margin: auto;
+    grid-template-areas:
+        'avatar avatar description description';
+        grid-template-columns: auto;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .container-grid > div {
+        text-align: center;
+        height: 100%;
+      }
+    .container-avatar{
+        grid-area: avatar;
+    }
+    .container-avatar img {
+        max-height: 200px;
+    }
+    
+    .container-description{
+        grid-area: description;
+        color: whitesmoke;
+    }
+
+    @media only screen and (max-width: 400px) {
+        .container-avatar img {
+            max-height: 100px !important;
+        }
+    }

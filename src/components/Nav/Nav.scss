@@ -15,9 +15,6 @@ height: 150px;
 	max-height: 100%;
 	display: flex;
 	justify-content: start;
-	align-items: center;
-	
-	
 }
 
 
@@ -133,10 +130,7 @@ nav {
 		transition:transform 0.5s ease;
 		top:$icon-size;
 		bottom:0px;
-		padding-right:16px;
 		width:$w;
-		height: 272px;
-		margin-top:169px;
 		margin-left: -83px; 
 		ul {
 			list-style:none;

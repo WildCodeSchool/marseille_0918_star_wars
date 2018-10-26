@@ -1,0 +1,24 @@
+.container_characters{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 100px 160px;
+    grid-gap: 50px;
+}
+
+.character_card{
+    height: 300Px;
+    display:flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 12px;
+    text-align: center;
+}
+
+.character_card h1 {
+    padding-bottom: 20px;
+    align-self: flex-end;
+}
+
+.button_character{
+    text-align: center;
+}

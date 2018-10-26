@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Route,BrowserRouter, Switch, NavLink} from 'react-router-dom';
 import Template from './Template';
-import Characters from './Characters/Characters';
+import Page2 from './Page2/Page2';
 
 export default class Routing extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class Routing extends Component {
         <div>
             <Switch>
                 <Route exact path="/" component={Template}/>
-                <Route path="/characters" component={Characters}/>
+                <Route path="/characters" component={Page2}/>
                 {/* <Route path="/profile" component={Profile}/> */}
             </Switch>          
         </div>

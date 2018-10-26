@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 // import {returnId} from '';
 import "./Search.scss";
 import Bouton_R2D2 from './Bouton_R2D2.png';
+import Characters from '../Page2/Characters';
 
 export default class Search extends Component {
 
@@ -45,7 +46,6 @@ isOpen(){
     this.setState({isOpen: !this.state.isOpen });
 }
 
-
 render() {
   console.log("IN RENDER STATE", this.state)
   let {searchResult, searchValue, charNames, isOpen} = this.state;
@@ -53,6 +53,8 @@ render() {
   let animButton = isOpen ? 'button-open' : 'button-close'
   let animButtonBody = isOpen ? 'body-open' : 'body-close'
   let animButtonHead = isOpen ? 'head-open' : 'head-close'
+
+
   
     return (
         <div>

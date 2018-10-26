@@ -2,15 +2,36 @@
 .footer {
     display: grid;
     grid-template-columns : repeat(2, 1fr);
+    background-color: #201D21;
+    border-top: 2px solid #f8e51e; 
+    margin-top: 110px;
+    height: 40px;
+    padding-right: 30px;
+    
 }
 
 .Socials {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .Instagram, .Facebook, .Twitter {
-    margin-right: 10px;
-    height: 30px;
-    width: 30px;
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        background-color: black;
+        border-top: 2px solid #f8e51e; 
+        margin-top: 110px;
+        height: 90px;
+    }
+  
+}
+.container_modal{
+    align-self: center;
+    margin-left: 20px
 }

@@ -31,7 +31,7 @@ hoverOpen(){
     return (
       <div
       className="titlecat"
-        style={{backgroundImage: background, cursor: 'pointer', backgroundSize: "101%, 99.99%", backgroundPosition: "center, 50% 20%", backgroundRepeat: "no-repeat"}}
+        style={{backgroundImage: background, cursor: 'pointer', backgroundSize: "101%, 100%", backgroundPosition: "center, 50% 20%", backgroundRepeat: "no-repeat"}}
         onMouseEnter={() => this.setState({hover: false})}
         onMouseLeave={() => this.setState({hover: true})}
       >

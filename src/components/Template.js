@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './../logo.svg';
 import './../App.css';
 import './Template.scss';
-import './header.scss';
 
+import Header from './Header/Header';
 import Categories from './Categorie/Categories';
 import Footer from './Footer/Footer';
 import Nav from './Nav/Nav';
@@ -14,18 +13,13 @@ class Template extends Component {
   render() {
     return (
       <div className="App">
-        <header className="header">
-            <img src={logo} className="App-logo" alt="logo" />
-        </header>
+       
     
-        
+        <Header/>
         <Nav/>
-        
        <Categories/>
-    
-        <footer>
-            <Footer />
-        </footer>
+        <Footer />
+
 
     </div>
 );

@@ -6,7 +6,7 @@ export default class Footer extends Component {
   render() {
     return (
     <div className="footer">
-        <div><FooterModal /></div>
+        <div className="container_modal"><FooterModal /></div>
         <div className="Socials">
             <a href="">
                 <img src={require('./facebook-logo.png')} className="Facebook" alt="Facebook"/>

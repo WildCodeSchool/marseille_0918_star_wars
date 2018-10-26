@@ -1,7 +1,9 @@
+
+
 .titlecat{
     color: white;
     background-position: center, center;
-    height: 400px;
+    height: 390px;
     border-radius: 5px;
     background-size: cover;
     display: flex;
@@ -29,9 +31,22 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap : 60px; 
-    margin: 0px 160px;
+    grid-gap : 40px; 
+    margin: 0px 230px;
     margin-top: 50px;
     margin-bottom: 60px;
 }
 }
+
+// @media (max-width: 1199.98px) {
+//     .cards {
+//         margin: 45px 310px;
+//         grid-gap : 90px;
+    
+//     }
+//     .titlecat{
+//         height: 800px;
+//     }
+  
+// }
+

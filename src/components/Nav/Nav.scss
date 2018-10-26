@@ -10,10 +10,10 @@ height: 150px;
 	// position: absolute;
 	// top: 50%;
 	// left: 50%;
-	margin-left: 25px;
+	margin-left: 70px;
     display: flex;
     max-height: 150px;
-    align-items: center;
+    align-self: center;
 	
 	// justify-self: start;
 	// align-self: center;
@@ -26,6 +26,7 @@ height: 150px;
 .toggle-icon {
 	// display: block;
 	// position: relative;
+	
 	display: block;
 	// width: 100%;
 	margin: 0.2em;
@@ -126,8 +127,10 @@ nav {
 		&.show {
 			transform:translatex(0%);
 		}
+		
 		display:grid;
 		grid-template-columns: 0.8fr 1.2fr 1fr 1fr 1fr; 
+		align-self: center;
 		font-family:Open Sans;
 		color:white;
 		background: rgba(50, 49, 49, 0.8);
@@ -136,10 +139,12 @@ nav {
 		transition:transform 0.8s ease;
 		top:$icon-size;
 		bottom:0px;
-		width:800px;
-		height: 75px;
-		margin-top:-157px;
-		margin-left: 26px; 
+		width: 486px;
+		height: 44px;
+		margin-top: -155px;
+		margin-left: 30px;
+
+		 
 		ul {
 			list-style:none;
 			padding:0;
@@ -148,11 +153,11 @@ nav {
 			//font-weight:bolder;
 			li {
 			@include lightsaber(#4df);
-			font-size:1.75em;
-			line-height:1.25em;
+			font-size:1.1em;
+			line-height:1.1em;
 			padding:0px;
 			padding-left:0px;
-			margin:20px 0px;
+			margin:12px 0px;
 			margin-left: 10px;
 			width:0px;
 			border-radius:0px 100px 100px 0px;
@@ -187,4 +192,61 @@ nav {
 	  	}
 	}
   }
+
+//   @media (max-width: 1199.98px) {
+
+// 	.toggle-icon{
+// 	transform:scale(1.50); 
+// 	}
+// 	// .toggle-icon .bar{
+// 	//     width: 6.3em;
+//     // height: 0.4em;
+//     // margin: 0.98em;
+//     // border-right: 4em solid #fff;
+//     // border-left: 1.4em solid #d6d6d6;
+// 	// }
+
+// 	.show ul li {
+// 		font-size: 2em;
+// 		line-height: 1em;
+// 	}
+
+// 	nav ul li {
+// 		font-size: 2em;
+// 		line-height: 1em;
+// 	}
+
+// 	nav {
+// 	top: 80px;
+//     bottom: 0px;
+//     width: 845px;
+//     height: 59px;
+//     margin-top: -96px;
+//     margin-left: 112px;
+// 	}
+
+// 	.show {
+	
+// 	top: 80px;
+//     bottom: 0px;
+//     width: 845px;
+//     height: 59px;
+//     margin-top: -96px;
+//     margin-left: 112px;
+	
+// 	}
+
+	
+
+// 	#nav-container{
+// 		margin-left: 85px;
+		
+// 	}
+
+// 	.menu {
+		
+// 		height: 230px;
+// 		}
+  
+// }
   

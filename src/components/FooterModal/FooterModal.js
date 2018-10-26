@@ -62,8 +62,8 @@ export default class FooterModal extends React.Component {
 
           <h2 ref={subtitle => this.subtitle = subtitle}>Join the Empire</h2>
           <ContactForm />
-          <div>
-          <img src={require('./Empire.svg')} className="IconClose" alt="Close button" onClick={this.closeModal}/>
+          <div >
+          <img src={require('./Icone_Planet.png')} className="IconClose" alt="Close button" onClick={this.closeModal}/>
           </div>
         </Modal>
 

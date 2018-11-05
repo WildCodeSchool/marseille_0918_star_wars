@@ -15,14 +15,14 @@ export default class Page3 extends Component {
 
   render() {
 
-    const profil = this.props.location.state.profil;
+    // const profil = this.props.location.state.profil;
 
     return (
       <div>
         <Header/>
         <Nav/>
         <Profil
-          name={profil}
+          name={this.props.location.state.profil}
           
         />
         <Footer />   

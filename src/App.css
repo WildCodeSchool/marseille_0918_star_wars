@@ -2,8 +2,11 @@
 
   background-image: url("./StarWars_Fond_Plan de travail 1.jpg");
   background-size: cover;
+  background-repeat: repeat; 
   
   font-family: 'Roboto', sans-serif;
+  max-width: 100%;
+  height: auto;
   
 } 
 

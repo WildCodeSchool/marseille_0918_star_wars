@@ -28,6 +28,8 @@ header {
 
 .App-logo {
 animation: logoStarWars 10s;
+width: 20%;
+height: 30%;
 
 }
 
@@ -37,11 +39,10 @@ perspective: 800px;
 transform-style: preserve3d;
 }
 
-.logoHeader {
-    width: 20%;
-    height: 30%;
-// width: 100%;
-}
+// .logoHeader {
+    
+// // width: 100%;
+// }
 
 @media screen and (max-width: 766px) {
 

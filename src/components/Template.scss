@@ -3,3 +3,13 @@
 //     margin-top: 50px;
 //     margin-bottom: 60px;
 // }
+
+@keyframes transition {
+    0%   { opacity:0; }
+    100% { opacity:1; }
+    }
+    
+    .bodyFirstPage{
+        opacity:0;
+        animation: transition 1s ease-in-out 2s forwards;
+    }

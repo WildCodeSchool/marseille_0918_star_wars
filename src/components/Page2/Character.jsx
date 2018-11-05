@@ -1,16 +1,21 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-export default class Character extends Component {
-render() {
+
+let image1 = require(`./character_bg.png`);
+
+const Character = ({name , url}) => (
     
-    let image1 = require(`./character_bg.png`)
-    // let background = `(url("./character_bg.png")`;
-
- return (
-    <div className='character_card'
-        style={{backgroundImage:`url("${image1}")`, cursor: `pointer`, backgroundSize: "120%", backgroundPosition: `center`}}>
-        <h1>{this.props.name}</h1>
+    <div className="character_card" style={{backgroundImage: `url("${image1}"),url("${`http://stephanejob.com/img/${imgPeople(url)}.jpg`}")`, cursor: `pointer`, backgroundSize: "100%", backgroundPosition: `center`}}>
+        
+        <div className="content">
+            <h1 className="name">{name}</h1>
+        </div>
     </div>
-)
+);
+function imgPeople(url) {
+    const split= url.split("/");
+    return split[5];
 }
-}
+export default Character;
+
+

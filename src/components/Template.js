@@ -16,9 +16,11 @@ class Template extends Component {
        
     
         <Header/>
+        <div className="bodyFirstPage">
         <Nav/>
        <Categories/>
         <Footer />
+        </div>
 
 
     </div>

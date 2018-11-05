@@ -1,0 +1,178 @@
+.containerProfil {
+    display: grid;
+    grid-template-columns : 1fr 60%;
+    height: 550px;
+}
+
+.holoContainer {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.holoContainer>img {
+    position: absolute;
+    top: 0;
+    height: 550px;
+}
+
+.photoProfil {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+.holoContainer>p{
+    color:white;
+}
+
+.holoContainer>img:nth-child(2),
+.holoContainer>img:nth-child(3) {
+    top: 0;
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+    clip: rect(0, 0, 0, 0);
+}
+
+.holoContainer>img:nth-child(2) {
+    animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.holoContainer>img:nth-child(3) {}
+
+@keyframes glitch-anim-1 {
+    0% {
+        clip: rect(12.7em, 25em, 400em, 0);
+    }
+
+    6% {
+        clip: rect(1.5em, 258rem, 400em, 0);
+    }
+
+    13% {
+        clip: rect(18.9em, 258em, 400em, 0);
+    }
+
+    20% {
+        clip: rect(2.1em, 258em, 400em, 0);
+    }
+
+    26% {
+        clip: rect(11em, 258em, 400em, 0);
+        opacity: .3;
+    }
+
+    33% {
+        clip: rect(17.5em, 2220em, -40em, 0);
+    }
+
+    40% {
+        clip: rect(14em, 258em, 400em, 0);
+    }
+
+    46% {
+        clip: rect(2.5em, 258em, 400em, 0);
+    }
+
+    53% {
+        clip: rect(213.9em, 258em, 400em, 0);
+    }
+
+    60% {
+        clip: rect(12.7em, 25.8em, 40em, 0);
+        opacity: .3;
+    }
+
+    66% {
+        clip: rect(25.6em, 258em, 400em, 0);
+    }
+
+    73% {
+        clip: rect(1.1em, 258em, 400em, 0);
+    }
+
+    80% {
+        clip: rect(13.4em, 258em, 400em, 0);
+    }
+
+    86% {
+        clip: rect(1.7em, 258em, 400em, 0);
+    }
+
+    93% {
+        clip: rect(17.5em, 258em, 400em, 0);
+        opacity: .3;
+    }
+
+    100% {
+        clip: rect(16.5em, 258em, 400em, 0);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0% {
+        clip: rect(12.7em, 258em, 400em, 0);
+    }
+
+    6% {
+        clip: rect(15.4em, 258em, 400em, 0);
+    }
+
+    13% {
+        clip: rect(1.8em, 258em, 400em, 0);
+    }
+
+    20% {
+        clip: rect(13.8em, 258em, 400em, 0);
+    }
+
+    26% {
+        clip: rect(1.1em, 258em, 280em, 0);
+    }
+
+    33% {
+        clip: rect(3em, 258em, 400em, 0);
+    }
+
+    40% {
+        clip: rect(1.1em, 258em, 400em, 0);
+    }
+
+    46% {
+        clip: rect(15.2rem, 258em, 400em, 0);
+    }
+
+    53% {
+        clip: rect(13.9em, 258em, 300em, 0);
+    }
+
+    60% {
+        clip: rect(40em, 258em, 400em, 0);
+        opacity: .3;
+    }
+
+    66% {
+        clip: rect(15.6em, 258em, 400em, 0);
+    }
+
+    73% {
+        clip: rect(1.1em, 258em, 400em, 0);
+    }
+
+    80% {
+        clip: rect(1.3em, 218em, 350em, 0);
+    }
+
+    86% {
+        clip: rect(17.3em, 258em, 400em, 0);
+    }
+
+    93% {
+        clip: rect(17.5em, 258em, 400em, 0);
+        opacity: .3;
+    }
+
+    100% {
+        clip: rect(16.5em, 258em, 400em, 0);
+    }
+}

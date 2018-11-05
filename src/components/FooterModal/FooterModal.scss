@@ -71,13 +71,20 @@ form {
 }
 
 .IconContact {
-    height: 50px;
-    width: 50px;
-    margin-left: 1em;
+    transform: scale(0.7);
+    cursor: pointer;
+   
+    margin-left: 0.5em;
     
 }
 
-@media all and (max-device-width: 480px)
+.container_modal{
+    align-self: center;
+    max-width: 100%;    
+    height: auto;
+}
+
+@media all and (min-device-width: 1200px)
 
 {
 
@@ -85,6 +92,62 @@ form {
         width: 80% !important;
         background-position-y: 100% !important;
 
+    }
+    .IconContact {
+        transform: scale(0.5);
+      
+        
+    }
+
+}
+
+@media all and (max-device-width: 1999px)
+
+{
+
+    .ReactModal__Content {
+        width: 80% !important;
+        background-position-y: 100% !important;
+
+    }
+    .IconContact {
+        transform: scale(0.5);
+      
+        
+    }
+
+}
+
+@media all and (max-device-width: 990px)
+
+{
+
+    .ReactModal__Content {
+        width: 80% !important;
+        background-position-y: 100% !important;
+
+    }
+    .IconContact {
+        transform: scale(0.5);
+      
+        
+    }
+
+}
+
+@media all and (max-device-width: 768px)
+
+{
+
+    .ReactModal__Content {
+        width: 80% !important;
+        background-position-y: 100% !important;
+
+    }
+    .IconContact {
+        transform: scale(0.7);
+      
+        
     }
 
 }

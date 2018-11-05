@@ -50,7 +50,7 @@ export default class FooterModal extends React.Component {
   render() {
     return (
       <div>
-        <img src={require('./Stormtrooper.png')} className="IconContact" alt="Contact us" onClick={this.openModal}/>
+        <img src={require('./Icone_Planet.png')} className="IconContact" alt="Contact us" onClick={this.openModal}/>
 
         <Modal
           isOpen={this.state.modalIsOpen}

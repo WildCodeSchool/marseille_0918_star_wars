@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 // import {returnId} from '';
 import "./Search.scss";
-import Bouton_R2D2 from './Bouton_R2D2.png';
-import Characters from '../Page2/Characters';
+
+
 
 export default class Search extends Component {
 
@@ -76,17 +76,9 @@ render() {
                     <div id="bb8_body" className={animButtonBody}>
                         <div id="lg2"></div>
                         <div id="c1">
-                            <div class="s1"></div>
-                            <div class="s2"></div>
+                          
                         </div>
-                        <div id="c2">
-                            <div class="s1"></div>
-                            <div class="s2"></div>
-                        </div>
-                        <div id="c3">
-                            <div class="s1"></div>
-                            <div class="s2"></div>
-                        </div>
+                        <div id="rectangle"></div>
                     </div>
                 </div>
             </div>

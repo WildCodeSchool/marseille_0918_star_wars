@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
 import Character from './Character'
 import './Character.scss'
+import{NavLink} from 'react-router-dom';
 
 
 export default class Characters extends Component {
-    constructor(props){
-        super(props);
-        this.state={
+
+        state={
             page:1,
             characters:[],
+            profil:[],
+
         }
-    }
+    
 
     componentDidMount(){
             this.fetchData()
@@ -32,6 +34,11 @@ export default class Characters extends Component {
             this.fetchData()
     };
 
+    getCharacter= (character) => {
+        this.setState({profil : character})
+        console.log(character)
+    }
+
 render() {
 
     return (
@@ -41,10 +48,13 @@ render() {
             { 
             this.state.characters.map((character) => {       
                 return(
-                
-                    <Character
-                    {...character}
-                    />
+                    <div onClick={()=>this.getCharacter(character)}>
+                    <NavLink to={{pathname:"/profile", state: {profil: character}}}>
+                        <Character
+                        {...character}
+                        />
+                    </NavLink>
+                    </div>
                 )
             }) 
             } 

@@ -7,7 +7,7 @@ export default class Header extends Component {
     return (
       <div>
         <header className="header">
-            <img src={logo} className="App-logo" alt="logo" />
+            <img className="logoHeader" src={logo} className="App-logo" alt="logo" />
         </header>
         
       </div>

@@ -65,8 +65,7 @@ form {
 }
 
 .IconClose {
-    height: 50px;
-    width: 50px;
+    width: 5%;
     margin-top: 10px;
 }
 
@@ -133,9 +132,13 @@ form {
         
     }
 
+    .IconClose {
+        width : 10%;
+    }
+
 }
 
-@media all and (max-device-width: 768px)
+@media all and (max-device-width: 766px)
 
 {
 

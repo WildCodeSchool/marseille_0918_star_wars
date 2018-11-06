@@ -23,6 +23,9 @@
     width: 25px;
 }
 
+.IconContact {
+    width: 16%;
+}
 
 @media screen and (min-width: 1200px) {
     .footer {
@@ -68,5 +71,9 @@
     .Instagram, .Facebook, .Twitter {
         margin-right: 10px;
         transform:scale(0.8);
+    }
+
+    .IconContact {
+        width:10%;
     }
 }

@@ -60,7 +60,7 @@ export default class FooterModal extends React.Component {
           contentLabel="Example Modal"
         >
 
-          <h2 ref={subtitle => this.subtitle = subtitle}>Join the Empire</h2>
+          <h2 ref={subtitle => this.subtitle = subtitle}>Join the Empire !</h2>
           <ContactForm />
           <div >
           <img src={require('./Icone_Planet.png')} className="IconClose" alt="Close button" onClick={this.closeModal}/>

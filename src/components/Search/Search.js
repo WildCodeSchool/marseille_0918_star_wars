@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 // import {returnId} from '';
 import "./Search.scss";
+import{NavLink} from 'react-router-dom';
 
 
 
@@ -13,6 +14,7 @@ constructor() {
         searchResult: [],
         charNames: [],
         isOpen: false,
+        profil:[],
     };
 
     this.isOpen = this.isOpen.bind(this);
@@ -41,6 +43,10 @@ async getCharacter(searchValue) {
     }
 }
 
+getName(char){
+    this.setState({searchValue: char.name})
+    this.setState({getCharacter:char})
+}
 
 isOpen(){
     this.setState({isOpen: !this.state.isOpen });
@@ -104,9 +110,11 @@ render() {
                                         <li 
                                             key={index}
                                             style={{color: 'black', cursor: 'pointer'}}
-                                            onClick={() => this.setState({searchValue: char.name})}
+                                            onClick={() => this.getName(char)}
                                         >   
+                                        <NavLink to={{pathname:"/profile", state: {profil : char}}}>
                                             {char.name}
+                                        </NavLink>
                                         </li>
                                     )
                                 })

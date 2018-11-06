@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Responsive from 'react-responsive';
 
     const Desktop = props => <Responsive {...props} minWidth={992} maxWidth={1199} />;
-    const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
-    const Mobile = props => <Responsive {...props}  maxWidth={767} />;
+    const Tablet = props => <Responsive {...props} minWidth={767} maxWidth={991} />;
+    const Mobile = props => <Responsive {...props}  maxWidth={766} />;
     const LargeDesktop = props => <Responsive {...props} minWidth={1200} />;
 
 export default class Categorie extends Component {
@@ -18,6 +18,30 @@ export default class Categorie extends Component {
 hoverOpen(){
     this.setState({hover : !this.state.hover})
 }
+
+componentDidMount(){
+// Setup isScrolling variable
+var isScrolling;
+// Listen for scroll events
+window.addEventListener('scroll', function scrollOn ( event ) {
+    
+	// Clear our timeout throughout the scroll
+	window.clearTimeout( isScrolling );
+
+	// Set a timeout to run after scrolling ends
+	isScrolling = setTimeout(function ScrollOff() {
+        
+		// Run the callback
+		console.log( 'Scrolling has stopped.' );
+
+	}, 66);
+
+}, false);
+}
+
+
+
+
 
   render() {
     const {title, images} = this.props;
@@ -73,8 +97,8 @@ hoverOpen(){
         <Mobile>
         <div className="titlecat"
                 style={{backgroundImage: background, cursor: 'pointer', backgroundSize: "60%, 59%", backgroundPosition: "center, 50% 25%", backgroundRepeat: "no-repeat"}}
-                onMouseEnter={() => this.setState({hover: false})}
-                onMouseLeave={() => this.setState({hover: true})}
+                ScrollOn={() => this.setState({hover: false})}
+                ScrollOff={() => this.setState({hover: true})}
                 >
                 <h1
                 >{title}

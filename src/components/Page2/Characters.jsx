@@ -60,7 +60,7 @@ render() {
             } 
             </div>
             <div className="button_character">
-                <button onClick={()=>this.fetchApi()}>More</button>
+            <img className="button_img" src={require('./More_button.png')}  onClick={()=>this.fetchApi()}/>
             </div>
         </div>
     )

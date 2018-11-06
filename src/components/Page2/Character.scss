@@ -3,7 +3,9 @@
     grid-template-columns: repeat(5, 1fr);
     margin: 100px 160px;
     grid-gap: 50px;
+    
 }
+
 
 .character_card{
     height: 300Px;
@@ -22,3 +24,114 @@
 .button_character{
     text-align: center;
 }
+
+@media screen and (min-width : 1200px){ 
+
+    .container_characters{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 45px 130px;
+        grid-gap: 30px;
+        height: auto;
+    }
+
+    .character_card{
+        height: 300px;
+        font-size: 12px;
+        text-align: center;
+        background-size: cover;
+        border-radius: 10px;
+        border: 2px solid white;
+        background-position: center;
+    }
+    .button_img{
+        
+        width: 80px;
+        height: 80px;
+    }
+    
+ 
+
+}
+
+@media screen and (max-width: 1199px) {
+
+    .container_characters{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 45px 90px;
+        grid-gap: 30px;
+        height: auto;
+    }
+
+    .character_card{
+        height: 200px;
+        font-size: 12px;
+        text-align: center;
+        background-size: cover;
+        border-radius: 10px;
+        border: 2px solid white;
+        background-position: center;
+    }
+    .button_img{
+        
+        width: 60px;
+        height: 60px;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+    .container_characters{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 45px 90px;
+        grid-gap: 30px;
+        height: auto;
+    }
+
+    .character_card{
+        height: 200px;
+        font-size: 12px;
+        text-align: center;
+        background-size: cover;
+        border-radius: 10px;
+        border: 2px solid white;
+        background-position: center;
+    }
+    .button_img{
+        
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-width: 766px) {
+
+    .container_characters{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 50px;
+        grid-gap: 20px;
+        height: auto;
+    }
+
+    .character_card{
+        height: 150px;
+        font-size: 12px;
+        text-align: center;
+        background-size: cover;
+        border-radius: 10px;
+        border: 2px solid white;
+        background-position: center;
+    }
+    .button_img{
+        
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+

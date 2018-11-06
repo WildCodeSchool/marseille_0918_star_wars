@@ -179,11 +179,13 @@ input{
     border-radius: 100%;
     border: 2.5px solid #fac562;
     position: relative;
+    left: 22px;
+    top: 12px;
 }
 #rectangle{
   	position: relative;
-    top: 11px;
-    left: 11px;
+    top: 13px;
+    left: 10px;
     width: 11px;
     height:2px;
     transform: rotate(130deg);

@@ -13,7 +13,16 @@ const Profil = ({name}) => (
     <div className="holoContainer">
         <p className="textContainer">
         <h1 className="name">{name.name}</h1>
-        <h1 className="name">{name.url}</h1>
+        <ul className="name">
+            <li>Height : {name.height}</li>
+            <li>Mass : {name.mass}</li>
+            <li>Hair color : {name.hair_color}</li>
+            <li>Skin color : {name.skin_color}</li>
+            <li>Eye color : {name.eye_color}</li>
+            <li>Birth year : {name.birth_year}</li>
+            <li>Gender : {name.gender}</li>
+
+        </ul>
         <br />
         </p>
         <img

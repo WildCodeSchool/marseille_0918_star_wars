@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Responsive from 'react-responsive';
 
     const Desktop = props => <Responsive {...props} minWidth={992} maxWidth={1199} />;
-    const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
-    const Mobile = props => <Responsive {...props}  maxWidth={767} />;
+    const Tablet = props => <Responsive {...props} minWidth={767} maxWidth={991} />;
+    const Mobile = props => <Responsive {...props}  maxWidth={766} />;
     const LargeDesktop = props => <Responsive {...props} minWidth={1200} />;
 
 export default class Categorie extends Component {

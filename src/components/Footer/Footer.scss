@@ -24,7 +24,10 @@
 }
 
 .IconContact {
-    width: 16%;
+    height: 50px;
+    transform: scale(0.7);
+    cursor: pointer;
+    margin-left: 0.5em;
 }
 
 @media screen and (min-width: 1200px) {
@@ -61,6 +64,10 @@
         margin-right: 15px;
         transform:scale(1.1);
     }
+
+    .IconContact {
+        transform:scale(0.6);
+    }
 }
 @media screen and (max-width: 766px) {
     .footer {
@@ -70,10 +77,11 @@
 
     .Instagram, .Facebook, .Twitter {
         margin-right: 10px;
-        transform:scale(0.8);
+        transform:scale(1);
     }
 
     .IconContact {
-        width:10%;
+        transform:scale(0.5);
     }
 }
+

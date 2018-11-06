@@ -69,13 +69,6 @@ form {
     margin-top: 10px;
 }
 
-.IconContact {
-    transform: scale(0.7);
-    cursor: pointer;
-   
-    margin-left: 0.5em;
-    
-}
 
 .container_modal{
     align-self: center;
@@ -92,11 +85,6 @@ form {
         background-position-y: 100% !important;
 
     }
-    .IconContact {
-        transform: scale(0.5);
-      
-        
-    }
 
 }
 
@@ -108,11 +96,6 @@ form {
         width: 80% !important;
         background-position-y: 100% !important;
 
-    }
-    .IconContact {
-        transform: scale(0.5);
-      
-        
     }
 
 }
@@ -126,15 +109,6 @@ form {
         background-position-y: 100% !important;
 
     }
-    .IconContact {
-        transform: scale(0.5);
-      
-        
-    }
-
-    .IconClose {
-        width : 10%;
-    }
 
 }
 
@@ -147,10 +121,9 @@ form {
         background-position-y: 100% !important;
 
     }
-    .IconContact {
-        transform: scale(0.3);
-      
-        
+
+    .IconClose {
+        width : 10%;
     }
 
 }

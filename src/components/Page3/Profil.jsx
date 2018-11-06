@@ -11,7 +11,6 @@ const Profil = ({name}) => (
     <div className="photoProfil" style={{backgroundImage: `url("${`http://stephanejob.com/img/${imgPeople(name.url)}.jpg`}")`, cursor: `pointer`, backgroundSize: "100%", backgroundPosition: `center`}}>
     </div>
     <div className="holoContainer">
-        <p className="textContainer">
         <h1 className="name">{name.name}</h1>
         <ul className="name">
             <li>Height : {name.height}</li>
@@ -23,8 +22,6 @@ const Profil = ({name}) => (
             <li>Gender : {name.gender}</li>
 
         </ul>
-        <br />
-        </p>
         <img
         src="http://image.noelshack.com/fichiers/2018/43/6/1540646493-screenblue.png"
         className="screenblue"

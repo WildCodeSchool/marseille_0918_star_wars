@@ -1,0 +1,22 @@
+header {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%    
+}
+
+.Logo-App {
+    width: 20%;
+    height: 30%;
+    
+    }
+    @media screen and (max-width: 766px) {
+            
+    .Logo-App {
+                
+    transform: scale(1.4);
+                
+                }
+    
+    }

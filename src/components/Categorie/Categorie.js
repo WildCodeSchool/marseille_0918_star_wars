@@ -23,13 +23,13 @@ componentDidMount(){
 // Setup isScrolling variable
 var isScrolling;
 // Listen for scroll events
-window.addEventListener('scroll', function scrollOn ( event ) {
+window.addEventListener('scroll', function( event ) {
     
 	// Clear our timeout throughout the scroll
 	window.clearTimeout( isScrolling );
 
 	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function ScrollOff() {
+	isScrolling = setTimeout(function() {
         
 		// Run the callback
 		console.log( 'Scrolling has stopped.' );
@@ -63,7 +63,7 @@ window.addEventListener('scroll', function scrollOn ( event ) {
     <div>
         <LargeDesktop>
         <div className="titlecat"
-                style={{backgroundImage: background, cursor: 'pointer', backgroundSize: "101%, 100%", backgroundPosition: "center, 50% 32%", backgroundRepeat: "no-repeat"}}
+                style={{backgroundImage: background, cursor: 'pointer', backgroundSize: "101%, 101%", backgroundPosition: "center, 50% 23%", backgroundRepeat: "no-repeat"}}
                 onMouseEnter={() => this.setState({hover: false})}
                 onMouseLeave={() => this.setState({hover: true})}
                 >

@@ -1,49 +1,60 @@
 import React, { Component } from "react";
 import "./Profil.scss";
 
+const Profil = ({ name }) => (
+  // let image1 = require(`./character_bg.png`);
 
-const Profil = ({name}) => (
-
-    // let image1 = require(`./character_bg.png`);
-
- 
-    <div className="containerProfil">
-    <div className="photoProfil" style={{backgroundImage: `url("${`http://stephanejob.com/img/${imgPeople(name.url)}.jpg`}")`, cursor: `pointer`, backgroundSize: "100%", backgroundPosition: `center`}}>
-    </div>
+  <div className="containerProfil">
+    <div
+      className="photoProfil"
+      style={{
+        backgroundImage: `url("${`http://stephanejob.com/img/${imgPeople(
+          name.url
+        )}.jpg`}")`,
+        cursor: `pointer`,
+        backgroundSize: "cover",
+        backgroundPosition: `center`
+      }}
+    />
     <div className="holoContainer">
-        <p className="textContainer">
-        <h1 className="name">{name.name}</h1>
-        <ul className="name">
-            <li>Height : {name.height}</li>
-            <li>Mass : {name.mass}</li>
-            <li>Hair color : {name.hair_color}</li>
-            <li>Skin color : {name.skin_color}</li>
-            <li>Eye color : {name.eye_color}</li>
-            <li>Birth year : {name.birth_year}</li>
-            <li>Gender : {name.gender}</li>
-
+      <div className="textContainer">
+        <h1 className="profil_title">{name.name}</h1>
+        <ul className="profil_text">
+          <li><strong> HEIGHT </strong>   <span className="profil_info">{name.height}</span></li>
+          <hr/>
+          <li> <strong> MASS </strong>   <span className="profil_info">{name.mass}</span></li>
+          <hr/>
+          <li> <strong> HAIR COLOR </strong>   <span className="profil_info">{name.hair_color}</span> </li>
+          <hr/>
+          <li> <strong> SKIN COLOR </strong>  <span className="profil_info">{name.skin_color}</span></li>
+          <hr/>
+          <li> <strong> EYE COLOR </strong>   <span className="profil_info">{name.eye_color}</span></li>
+          <hr/>
+          <li> <strong> BIRTH YEAR </strong>  <span className="profil_info">{name.birth_year}</span></li>
+          <hr/>
+          <li> <strong> GENDER </strong>   <span className="profil_info">{name.gender}</span></li>
         </ul>
-        <br />
-        </p>
-        <img
-        src="http://image.noelshack.com/fichiers/2018/43/6/1540646493-screenblue.png"
+      </div>
+
+      <img
+        src={require('./bluescreen.png')}
         className="screenblue"
-        />
-        <img
-        src="http://image.noelshack.com/fichiers/2018/43/6/1540646493-screengreen.png"
+      />
+      <img
+        src={require('./greenscreen.png')}
         className="screengreen"
-        />
-        <img
-        src="http://image.noelshack.com/fichiers/2018/43/6/1540646493-screenred.png"
+      />
+      <img
+        src={require('./redscreen.png')}
         className="screenred"
-        />
+      />
     </div>
-    </div>
+  </div>
 );
 
 function imgPeople(url) {
-    const split= url.split("/");
-    return split[5];
+  const split = url.split("/");
+  return split[5];
 }
 
 export default Profil;

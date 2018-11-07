@@ -13,7 +13,7 @@ export default class Routing extends Component {
                 <Route exact path="/" component={Template}/>
                 <Route path="/characters" component={Page2}/>
                 <Route path="/profile" component={Page3}/>
-                <Route path="/error" component={Error}/>
+                <Route path="/" component={Error}/>
                 {/* <Route path="/profile" component={Profile}/> */}
             </Switch>          
         </div>

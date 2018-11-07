@@ -1,0 +1,25 @@
+.error404 {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.errorText {
+    color:rgb(226, 226, 139);
+    font-size: 2em;
+    font-style: italic;
+}
+
+.Yoda {
+    width: 100%;
+}
+
+@media screen and (max-width: 766px) {
+    .errorText {
+        font-size: 1em;
+        height: auto;
+    }
+}

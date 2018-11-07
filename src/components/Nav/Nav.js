@@ -50,7 +50,7 @@ export class Nav extends React.Component {
               </ul>
               <ul>
                 <li className="red">
-                  <a href="#">Vehicles</a>
+                <NavLink to="/error"> Vehicles </NavLink>
                 </li>
               </ul>
               <ul>

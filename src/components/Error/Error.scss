@@ -1,0 +1,20 @@
+.error {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.errorText {
+    color:yellow;
+    font-size: 2em;
+    font-style: italic;
+}
+
+.Yoda {
+    width: 100%;
+}
+
+@media screen and (max-width: 766px) {
+    .errorText {
+        font-size: 1em;
+    }
+}

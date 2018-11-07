@@ -349,29 +349,30 @@ ul li {
 @media screen and (max-width: 766px) {
 
 	.toggle-icon{
-			transform:scale(0.5); 
+			transform:scale(0.6); 
 		
 			}
 			
 		nav {
 			&.show {
 				transform:translatex(0%);
-				width: 194px;
+				width: 234px;
 				
 			}
 			
 			top: 80px;
 			bottom: 0px;
-			width: 150px;
-			height: 18px;
-			margin-left: -29px;
-			margin-bottom: 20px;
+			width: 170px;
+			height: 20px;
+			margin-left: -73px;
+    		margin-bottom: -45px;
 			align-content: center;
 			padding-right: 5px;	
 			
 			ul li {
-				font-size: 7px;
+				font-size: 9px;
 				line-height: 0.8em;
+				
 				&:hover {
 					width:100%;
 					padding: 0px;
@@ -386,7 +387,8 @@ ul li {
 		
 		}
 			#nav-container{
-				margin-left: -10px;
+				margin-left: -3px;
+				margin-bottom: 10px
 				
 				
 			}

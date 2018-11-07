@@ -96,7 +96,7 @@ render() {
                     value={searchValue}
                     onChange={(e) => this.getCharacter(e.target.value)}
                     autoComplete='off'
-                    placeholder= "May the force be with you"
+                    placeholder= "Force be with you"
                 />
                 {   // display suggestions if exist and if no one is selected 
                     searchResult.length > 0 && 

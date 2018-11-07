@@ -97,8 +97,8 @@ window.addEventListener('scroll', function( event ) {
         <Mobile>
         <div className="titlecat"
                 style={{backgroundImage: background, cursor: 'pointer', backgroundSize: "60%, 59%", backgroundPosition: "center, 50% 25%", backgroundRepeat: "no-repeat"}}
-                ScrollOn={() => this.setState({hover: false})}
-                ScrollOff={() => this.setState({hover: true})}
+                onMouseEnter={() => this.setState({hover: false})}
+                onMouseLeave={() => this.setState({hover: true})}
                 >
                 <h1
                 >{title}

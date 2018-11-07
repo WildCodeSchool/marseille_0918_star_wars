@@ -23,6 +23,7 @@ input{
     opacity: 0%;
     outline:none;
     font-family: 'Roboto Condensed', sans-serif;
+    border: 0px;
     
     
 }
@@ -40,6 +41,7 @@ input{
     width: 316px;
     padding-left: 52px;
     font-size: 17px;
+    
     
 }
 
@@ -404,7 +406,7 @@ a{
     .input-close {
         margin-top: 18px;
         margin-left: 10px;
-        padding-left: 33px;
+        padding-left: 23px;
         font-size: 16px;
     }
     input{
@@ -432,15 +434,15 @@ a{
     }
     
     .input-open {
-        width: 218px;
+        width: 215px;
         margin-top: 18px;
-        margin-left: 10px;
+        margin-left: 11px;
         padding-left: 36px;
         font-size: 14px;
     }
     .input-close {
         margin-top: 18px;
-        margin-left: 10px;
+        margin-left: 2px;
         padding-left: 30px;
         font-size: 14px;
     }
@@ -466,15 +468,16 @@ a{
     }
     
     #bb8{
-        transform:scale(0.5); 
+        transform:scale(0.7); 
     }
     
     .input-open {
-        width: 105px;
+        width: 115px;
         margin-top: 20px;
         margin-left: 13px;
-        padding-left: 22px;
-        font-size: 8px;
+        padding-left: 33px;
+        font-size: 9px;
+        
     }
     .input-close {
         width: 10px;
@@ -482,9 +485,10 @@ a{
         margin-left: 13px;
         padding-left: 18px;
         font-size: 0px;
+
     }
     input{
-        height:14px;
+        height:18px;
     }
     .suggestion {
         width: 63px;

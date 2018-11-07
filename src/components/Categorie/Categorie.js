@@ -4,7 +4,7 @@ import Responsive from 'react-responsive';
     const Desktop = props => <Responsive {...props} minWidth={992} maxWidth={1199} />;
     const Tablet = props => <Responsive {...props} minWidth={767} maxWidth={991} />;
     const Mobile = props => <Responsive {...props}  maxWidth={766} />;
-    const LargeDesktop = props => <Responsive {...props} minWidth={1200} />;
+    const LargeDesktop = props => <Responsive {...props} maxWidth={2100} />;
 
 export default class Categorie extends Component {
     constructor(props){
@@ -23,13 +23,13 @@ componentDidMount(){
 // Setup isScrolling variable
 var isScrolling;
 // Listen for scroll events
-window.addEventListener('scroll', function scrollOn ( event ) {
+window.addEventListener('scroll', function( event ) {
     
 	// Clear our timeout throughout the scroll
 	window.clearTimeout( isScrolling );
 
 	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function ScrollOff() {
+	isScrolling = setTimeout(function() {
         
 		// Run the callback
 		console.log( 'Scrolling has stopped.' );
@@ -63,7 +63,7 @@ window.addEventListener('scroll', function scrollOn ( event ) {
     <div>
         <LargeDesktop>
         <div className="titlecat"
-                style={{backgroundImage: background, cursor: 'pointer', backgroundSize: "101%, 100%", backgroundPosition: "center, 50% 32%", backgroundRepeat: "no-repeat"}}
+                style={{backgroundImage: background, cursor: 'pointer', backgroundSize: "101%, 102%", backgroundPosition: "center, 50% 20%", backgroundRepeat: "no-repeat"}}
                 onMouseEnter={() => this.setState({hover: false})}
                 onMouseLeave={() => this.setState({hover: true})}
                 >

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from '../Header/Header';
+import HeaderNoAnim from '../Header/HeaderNoAnim';
 import Footer from '../Footer/Footer';
 import Nav from '../Nav/Nav';
 import FooterModal from '../FooterModal/FooterModal';
@@ -10,7 +10,7 @@ export default class Page2 extends Component {
   render() {
     return (
       <div>
-        <Header/>
+        <HeaderNoAnim/>
         <Nav/>
         <Characters/>
         <Footer />   

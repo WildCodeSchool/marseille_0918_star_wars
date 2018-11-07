@@ -202,9 +202,9 @@ nav {
   }
 
 
-@media screen and (min-width : 1200px){ 
+@media screen and (max-width : 2100px){ 
 	.toggle-icon{
-		transform:scale(0.9); 
+		transform:scale(1.2); 
 		
 	}
 	
@@ -215,14 +215,14 @@ nav {
 	}
 	top: 80px;
 	bottom: 0px;
-	width: 460px;
-    height: 40px;
+	width: 550px;
+    height: 55px;
     margin-left: 61px;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
 	align-content: center;
 	
 	ul li {
-		font-size: 1.1em;
+		font-size: 1.3em;
 		line-height: 1.1em;
 		&:hover {
 			width:110%;
@@ -237,6 +237,14 @@ nav {
 	}
 	
 	}
+	#nav-container{
+		margin-left: 119px;	
+	}
+	
+	.menu {
+		
+		height: 200px;
+		}  
 
 }
 

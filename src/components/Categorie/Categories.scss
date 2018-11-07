@@ -43,16 +43,15 @@ a{
 // }
 // }
 
-@media screen and (min-width : 1200px){ 
+@media screen and (max-width : 2100px){ 
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 45px 310px;
         grid-gap : 40px;
-        margin: 0px 20%;
+        margin: 0px 26%;
         
-        margin-top: 50px;
-        margin-bottom: 60px; 
+        margin-top: 70px;
+        margin-bottom: 80px; 
     }
     .titlecat{
         min-height: 280px;
@@ -61,10 +60,11 @@ a{
     }
     .titlecat h1{
         position: relative; 
-        font-size: 1.7em; 
-        margin: 0px;
-        bottom: 12%;       
+        font-size: 32px;
+        letter-spacing: 5px;
+        bottom: 2%;     
 } 
+
 
 }
 
@@ -86,9 +86,10 @@ a{
     }
     .titlecat h1{
         position: relative; 
-        font-size: 1.5em; 
+        font-size: 25px;
+        letter-spacing: 3px;
         margin: 0px;
-        bottom: 11%;       
+        bottom: 8%;       
 } 
 }
 
@@ -111,7 +112,8 @@ a{
     }
     .titlecat h1{
         position: relative; 
-        font-size: 1.3em; 
+        font-size: 24px;
+        letter-spacing: 3px;
         margin: 0px;
         bottom: 7%;       
 } 
@@ -137,7 +139,8 @@ a{
     }
     .titlecat h1{
         position: relative; 
-        font-size: 1.2em; 
+        font-size: 24px;
+        letter-spacing: 4px; 
         margin: 0px;
         bottom: 9%;       
 } 

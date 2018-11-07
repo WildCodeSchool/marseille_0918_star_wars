@@ -50,7 +50,7 @@ export class Nav extends React.Component {
               </ul>
               <ul>
                 <li className="red">
-                <NavLink to="/"> Vehicles </NavLink>
+                <NavLink to="/"> Starships </NavLink>
                 </li>
               </ul>
               <ul>

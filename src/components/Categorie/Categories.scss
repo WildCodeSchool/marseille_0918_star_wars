@@ -43,12 +43,12 @@ a{
 // }
 // }
 
-@media screen and (max-width : 2100px){ 
+@media screen and (min-width : 1200px){ 
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap : 40px;
-        margin: 0px 26%;
+        margin: 0px 18%;
         
         margin-top: 70px;
         margin-bottom: 80px; 

@@ -4,7 +4,7 @@ import Responsive from 'react-responsive';
     const Desktop = props => <Responsive {...props} minWidth={992} maxWidth={1199} />;
     const Tablet = props => <Responsive {...props} minWidth={767} maxWidth={991} />;
     const Mobile = props => <Responsive {...props}  maxWidth={766} />;
-    const LargeDesktop = props => <Responsive {...props} maxWidth={2100} />;
+    const LargeDesktop = props => <Responsive {...props} minWidth={1200} />;
 
 export default class Categorie extends Component {
     constructor(props){
@@ -63,7 +63,7 @@ window.addEventListener('scroll', function( event ) {
     <div>
         <LargeDesktop>
         <div className="titlecat"
-                style={{backgroundImage: background, cursor: 'pointer', backgroundSize: "101%, 102%", backgroundPosition: "center, 50% 20%", backgroundRepeat: "no-repeat"}}
+                style={{backgroundImage: background, cursor: 'pointer', backgroundSize: "101%, 101%", backgroundPosition: "center, 50% 23%", backgroundRepeat: "no-repeat"}}
                 onMouseEnter={() => this.setState({hover: false})}
                 onMouseLeave={() => this.setState({hover: true})}
                 >
